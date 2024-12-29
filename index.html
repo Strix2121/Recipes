@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="text-align: left;">
+        <button id="toggleLanguage">Switch to English</button>
+    </div>
+    <h1 id="pageTitle">الوصفات</h1>
+    <div>
+        <input type="text" id="recipeName" placeholder="ادخل اسم الوصفة">
+        <button id="showRecipe">عرض الوصفة</button>
+    </div>
+    <div>
+        <input type="text" id="ingredient" placeholder="ادخل المكونات">
+        <button id="addIngredient">إضافة المكونات</button>
+    </div>
+    <table id="recipeTable" border ="" style="margin: 20px auto; border-collapse: collapse;">
+        <tr>
+            <th>اسم الوصفة</th>
+            <th>المكونات</th>
+        </tr>
+        <tr>
+            <td><h2 id="displayRecipeName"></h2></td>
+            <td><ul id="ingredientList"></ul></td>
+        </tr>
+    </table>
+    <button id="clearAll">مسح الكل</button>
+    <script src="script.js"></script>
+</body>
+</html>
